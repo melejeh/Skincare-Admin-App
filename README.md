@@ -9,7 +9,7 @@ A JavaFX + Spring Boot desktop application for managing the PlanetMel Skin Co. p
 - Shared H2/PostgreSQL database with the web app
 
 ## Tech Stack
-- Java 17
+- Java 
 - JavaFX
 - Spring Boot
 - Spring Data JPA
