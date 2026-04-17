@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane
+            xmlns="http://javafx.com/javafx/25"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="PlanetMel.controller.MasterProvisionController"
+            style="-fx-background-image: url('file:src/main/resources/se2203b/assignments/images/WesternBackground.png');
+             -fx-background-size: stretch;">
+
+
+    <top>
+        <ToolBar>
+            <Label text="iSky – Initial User Provisioning (Master only)"
+                   style="-fx-font-size: 16px; -fx-font-weight: bold;"/>
+            <Pane HBox.hgrow="ALWAYS"/>
+            <Button fx:id="btnContinue"
+                    text="Continue to main menu"
+                    onAction="#handleContinue"/>
+        </ToolBar>
+    </top>
+
+    <center>
+        <VBox spacing="14.0" alignment="TOP_CENTER">
+            <padding>
+                <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+            </padding>
+
+            <VBox maxWidth="720.0" spacing="6.0">
+                <Label fx:id="lblHeader"
+                       text="Create initial accounts for each iSky role."
+                       style="-fx-font-size: 18px; -fx-font-weight: bold;"/>
+                <Label fx:id="lblSubheader"
+                       text="Each role must have at least one account before regular use of the system."
+                       wrapText="true"/>
+                <Label fx:id="lblMasterInfo"
+                       text="You are signed in as: (master)"
+                       wrapText="true" style="-fx-opacity: 0.85;"/>
+            </VBox>
+
+            <Separator maxWidth="720.0"/>
+
+            <!-- Three role cards stacked vertically -->
+            <VBox spacing="12.0" maxWidth="720.0">
+
+                <!-- Business Manager card -->
+                <TitledPane fx:id="paneBM" text="Business Manager" expanded="true">
+                    <content>
+                        <GridPane >
+                            <columnConstraints>
+                                <ColumnConstraints minWidth="140.0" prefWidth="160.0"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                            </columnConstraints>
+
+                            <Label text="Status:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                            <Label fx:id="lblStatusBM" text="Missing"
+                                   GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                            <Label text="Username" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                            <TextField fx:id="txtUserBM" promptText="e.g., bm-01"
+                                       GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                            <Label text="Temporary password" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                            <PasswordField fx:id="pwdBM" promptText="Strong temp password"
+                                           GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                            <Button fx:id="btnCreateBM"
+                                    text="Create Business Manager"
+                                    onAction="#handleCreateBM"
+                                    GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        </GridPane>
+                    </content>
+                </TitledPane>
+
+                <!-- Network Admin card -->
+                <TitledPane fx:id="paneNA" text="Network Administrator" expanded="true">
+                    <content>
+                        <GridPane >
+                            <columnConstraints>
+                                <ColumnConstraints minWidth="140.0" prefWidth="160.0"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                            </columnConstraints>
+
+                            <Label text="Status:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                            <Label fx:id="lblStatusNA" text="Missing"
+                                   GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                            <Label text="Username" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                            <TextField fx:id="txtUserNA" promptText="e.g., na-01"
+                                       GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                            <Label text="Temporary password" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                            <PasswordField fx:id="pwdNA" promptText="Strong temp password"
+                                           GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                            <Button fx:id="btnCreateNA"
+                                    text="Create Network Administrator"
+                                    onAction="#handleCreateNA"
+                                    GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        </GridPane>
+                    </content>
+                </TitledPane>
+
+                <!-- Line-of-Business Exec card -->
+                <TitledPane fx:id="paneLOB" text="Line-of-Business Executive" expanded="true">
+                    <content>
+                        <GridPane >
+                            <columnConstraints>
+                                <ColumnConstraints minWidth="140.0" prefWidth="160.0"/>
+                                <ColumnConstraints hgrow="ALWAYS"/>
+                            </columnConstraints>
+
+                            <Label text="Status:" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+                            <Label fx:id="lblStatusLOB" text="Missing"
+                                   GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                            <Label text="Username" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                            <TextField fx:id="txtUserLOB" promptText="e.g., lob-01"
+                                       GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                            <Label text="Temporary password" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                            <PasswordField fx:id="pwdLOB" promptText="Strong temp password"
+                                           GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                            <Button fx:id="btnCreateLOB"
+                                    text="Create LOB Executive"
+                                    onAction="#handleCreateLOB"
+                                    GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+                        </GridPane>
+                    </content>
+                </TitledPane>
+
+            </VBox>
+
+            <Label fx:id="lblGlobalStatus"
+                   text=""
+                   wrapText="true"
+                   style="-fx-text-fill: #b00020;"/>
+
+        </VBox>
+    </center>
+</BorderPane>

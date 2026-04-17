@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: #fdf6f0;"
+            fx:controller="PlanetMel.controller.MainController">
+
+    <top>
+        <VBox>
+            <HBox alignment="CENTER" style="-fx-background-color: #5c4033; -fx-padding: 10 20 10 20;">
+                <Label text="✦  PLANETMEL SKIN CO.  ✦"
+                       style="-fx-font-family: 'Georgia'; -fx-font-size: 14px; -fx-text-fill: #e8d5c4; -fx-font-weight: bold;" />
+            </HBox>
+
+            <MenuBar fx:id="menuBar" style="-fx-background-color: #fffaf7; -fx-border-color: #e8d5c4; -fx-border-width: 0 0 1 0;">
+
+                <Menu text="File">
+                    <MenuItem fx:id="mnuLogout" onAction="#handleLogout" text="Logout" />
+                    <SeparatorMenuItem />
+                    <MenuItem fx:id="mnuExit" onAction="#handleExit" text="Exit" />
+                </Menu>
+
+                <Menu fx:id="menuBusiness01" text="Products" visible="false">
+                    <MenuItem onAction="#handleManageProducts" text="Manage Products" />
+                    <MenuItem onAction="#handleAddNewProduct" text="Add New Product" />
+                </Menu>
+
+                <Menu fx:id="menuBusiness02" text="Orders" visible="false">
+                    <MenuItem onAction="#handleBusinessManagerTask" text="View All Orders" />
+                </Menu>
+
+                <Menu fx:id="menuBusiness03" text="Customers" visible="false">
+                    <MenuItem onAction="#handleBusinessManagerTask" text="View All Customers" />
+                </Menu>
+
+                <Menu fx:id="menuBusiness04" text="Reports" visible="false">
+                    <MenuItem onAction="#handleBusinessManagerTask" text="Sales Report" />
+                </Menu>
+
+                <Menu fx:id="userMenuItem" text=" " visible="false">
+                    <MenuItem fx:id="changePasswordMenuItem" onAction="#changePassword" text="Change Password" />
+                    <SeparatorMenuItem />
+                    <MenuItem fx:id="logoutMenuItem" disable="true" onAction="#handleLogout" text="Logout" />
+                </Menu>
+
+            </MenuBar>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="16.0">
+            <padding>
+                <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+            </padding>
+
+            <VBox alignment="CENTER" spacing="12.0" maxWidth="500.0"
+                  style="-fx-background-color: #fffaf7; -fx-background-radius: 16px; -fx-border-color: #e8d5c4; -fx-border-radius: 16px; -fx-border-width: 1px;">
+                <padding>
+                    <Insets bottom="32.0" left="32.0" right="32.0" top="32.0" />
+                </padding>
+
+                <Label text="✦"
+                       style="-fx-font-size: 28px; -fx-text-fill: #c9a98a;" />
+
+                <Label fx:id="lblWelcome"
+                       style="-fx-font-size: 20px; -fx-font-weight: bold; -fx-text-fill: #5c4033; -fx-font-family: 'Georgia';"
+                       text="Welcome" />
+
+                <Label fx:id="lblRole"
+                       style="-fx-font-size: 13px; -fx-text-fill: #b89c8a; -fx-font-family: 'Georgia'; -fx-font-style: italic;"
+                       text="Role:" />
+
+                <Separator style="-fx-background-color: #e8d5c4;" maxWidth="300.0"/>
+
+                <Label fx:id="lblBody"
+                       text="Select an option from the menu above."
+                       style="-fx-font-size: 13px; -fx-text-fill: #a08878; -fx-font-family: 'Georgia';"
+                       wrapText="true" alignment="CENTER"/>
+            </VBox>
+
+            <Label text="© 2025 PlanetMel Skin Co."
+                   style="-fx-font-size: 11px; -fx-text-fill: #c4a898; -fx-font-family: 'Georgia'; -fx-font-style: italic;" />
+        </VBox>
+    </center>
+
+</BorderPane>
