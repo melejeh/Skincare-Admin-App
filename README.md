@@ -16,8 +16,8 @@ A JavaFX + Spring Boot desktop application for managing the PlanetMel Skin Co. p
 - H2 Database
 
 ## Part of the PlanetMel Platform
-- [SkinCare-Website](https://github.com/melejeh/SkinCare-Website) — static frontend
 - [SkinCare-WebApp](https://github.com/melejeh/SkinCare-WebApp) — customer-facing web app
+- [SkinCare-Website](https://github.com/melejeh/SkinCare-Website) — static frontend
 <img width="416" height="513" alt="Screenshot 2026-04-17 at 7 21 40 PM" src="https://github.com/user-attachments/assets/550cf127-38d7-4a24-873f-d899da7fa524" />
 <img width="422" height="518" alt="Screenshot 2026-04-17 at 7 26 54 PM" src="https://github.com/user-attachments/assets/ef5aac9c-6b8a-4899-aa2c-063064a860e6" />
 <img width="422" height="516" alt="Screenshot 2026-04-17 at 7 22 01 PM" src="https://github.com/user-attachments/assets/c9e40e3b-eabc-4002-902f-6301d5a69516" />
