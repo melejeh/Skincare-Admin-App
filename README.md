@@ -19,6 +19,6 @@ A JavaFX + Spring Boot desktop application for managing the PlanetMel Skin Co. p
 - [SkinCare-Website](https://github.com/melejeh/SkinCare-Website) — static frontend
 - [SkinCare-WebApp](https://github.com/melejeh/SkinCare-WebApp) — customer-facing web app
 <img width="416" height="513" alt="Screenshot 2026-04-17 at 7 21 40 PM" src="https://github.com/user-attachments/assets/550cf127-38d7-4a24-873f-d899da7fa524" />
+<img width="422" height="518" alt="Screenshot 2026-04-17 at 7 26 54 PM" src="https://github.com/user-attachments/assets/ef5aac9c-6b8a-4899-aa2c-063064a860e6" />
 <img width="422" height="516" alt="Screenshot 2026-04-17 at 7 22 01 PM" src="https://github.com/user-attachments/assets/c9e40e3b-eabc-4002-902f-6301d5a69516" />
-<img width="422" height="516" alt="Screenshot 2026-04-17 at 7 22 01 PM" src="https://github.com/user-attachments/assets/c9e40e3b-eabc-4002-902f-6301d5a69516" />
-<img width="737" height="622" alt="Screenshot 2026-04-17 at 7 22 19 PM" src="https://github.com/user-attachments/assets/b293dfcb-e975-4e78-9792-54bfae0e667b" />
+<img width="729" height="616" alt="Screenshot 2026-04-17 at 7 27 26 PM" src="https://github.com/user-attachments/assets/5e9b10f4-8684-4d56-b579-84c1048308f3" />
